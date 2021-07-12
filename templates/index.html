@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Heatmaps</title>
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&libraries=visualization"></script>
+  <script src="/static/js/data.js"></script>
+</head>
+
+<body>
+  <div id="floating-panel">
+    <!-- <h1>Lifty</h1>c -->
+    <div>
+      <button class="btn btn-primary" onclick="loadLaunch()">Set</button>
+    </div>
+    <div>
+      <button class="btn btn-success" onclick="toggleHeatmap()">Toggle Heatmap</button>
+    </div>
+    <div>
+      <button class="btn btn-success" onclick="changeGradient()">Change gradient</button>
+    </div>
+    <div>
+      <button class="btn btn-success" onclick="changeRadius()">Change radius</button>
+    </div>
+    <div>
+      <button class="btn btn-success" onclick="changeOpacity()">Change opacity</button>
+    </div>
+    <div>
+      <button class="btn btn-success" onclick="getLocation()">Get Location</button>
+    </div>
+  </div>
+  <div id="map"></div>
+</body>
+<script src="/static/js/heatmap.js"></script>
+
+</html>
